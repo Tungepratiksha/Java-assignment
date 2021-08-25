@@ -1,0 +1,28 @@
+//Write a program in JAVA to convert temperature in Celsius to Fahrenheit.   
+//Sample Output:
+//Convert temperature in Celsius to Fahrenheit :
+//---------------------------------------------------
+//Input the temperature in Celsius : 35
+//The temperature in Celsius : 35
+//The temperature in Fahrenheit : 95
+
+import java.util.Scanner;
+class Celsius_to_Fahrenheit 
+{
+ public static void main(String[] args)
+{
+ System.out.println("Convert temperature in Celsius to Fahrenheit:");
+ System.out.println("-------------------------------------");
+ int cel, far;
+
+Scanner s=new Scanner(System.in);
+System.out.print("Input the  temperature in Celsius:");
+cel=s.nextInt();
+
+far = cel * 9/5 + 32;
+System.out.println("The temperature in Celsius: "+cel);
+
+
+System.out.println("The temperature in Fahrenheit: "+far);
+}
+}
